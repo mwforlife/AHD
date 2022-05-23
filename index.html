@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHD Hairdresser - Nuevo Style</title>
+    <meta name="author" content="Wilkens Mompoint">
+    <meta name="description" content="Software de Gestion de peluquerias">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="css/js-snackbar.min.css">
+    <link rel="stylesheet" href="css/style_service.css">
+    <link rel="stylesheet" href="css/style_nosotros.css">
+    <link rel="icon" type="image/x-icon" href="img/logo/icono.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <style>
+        .modal {
+            background-image: url(img/fondos/font_1.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .separator {
+            border-color: red;
+            width: 60%;
+            ;
+        }
+        
+        .box-shad {
+            box-shadow: 0px 0px 10px 0px;
+            margin: 10px;
+            background-color: #ffffff
+        }
+        
+        border- #servicios {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body onload="eventos()">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+
+            <span class="spinner-rotate"></span>
+
+        </div>
+    </section>
+
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-5">
+                    <p>Bienvenido a Advanced hairdresser Management</p>
+                </div>
+
+                <div class="col-md-8 col-sm-7 text-align-right">
+                    <a href="#" data-toggle="modal" data-target="#login1"><span class="social-icon"> <i class="fa fa-user"></i>Login</span></a>
+                    <span class="phone-icon"><i class="fa fa-phone"></i>+56945250440</span>
+                    <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 8:00 AM - 19:00 PM (Lunes-Sabado)</span>
+                    <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="mailto:ahd@wilkenstech.host">ahd@wilkenstech.host</a></span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <section class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a href="#" class="navbar-brand"><img src="img/logo/logo.png" width="160"></a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#nosotros" class="smoothScroll">Nosotros</a></li>
+                    <li><a href="#servicios" class="smoothScroll">Servicios</a></li>
+                    <li><a href="#contactos" class="smoothScroll">Contactos</a></li>
+                    <li><a href="#" class="smoothScroll" data-toggle="modal" data-target="#user-signin">Registrate</a></li>
+                    <li class="appointment-btn" id="appointment-btn"></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item item-first">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Bienvenido a Nuevo Style</h3>
+                                <h1>Nuevo Style</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item-second">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Dejadnos tu Pelo, Nosotros le damos estilo</h3>
+                                <h1>Nuevo Style</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item-third">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Tu pelo esta en las mejores manos</h3>
+                                <h1>Nuevo Style</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Nosotros-->
+    <section id="nosotros" class="wow fadeInUp" data-wow-delay="0.8s">
+        <!--Nosotros start -->
+        <div class="about_main ">
+            <div class="services_main ">
+                <div class="container ">
+                    <div class="creative_taital ">
+                        <h1 class="creative_text ">¡Que hacemos?</h1>
+                        <p style="color: #050000; text-align: center; ">
+
+                            Nuevo Style es un centro de estética y peluquería especializado en resaltar los atributos de tu cabello. Como sabemos lo importante que es para ti el cuidado de tu belleza, es que contamos con un equipo de profesionales dedicadas al cuidado de tu cabello,
+                            utilizando siempre la ultima tecnología con productos que cuidan tu pelo, los que están debidamente avalados por el Instituto de Salud Pública de Chile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Features Big Item Start ***** -->
+        <section class="section padding-top-70 padding-bottom-0 " id="features ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-5 col-md-12 col-sm-12 align-self-center " data-scroll-reveal="enter left move 30px over 0.6s after 0.4s ">
+                        <img src="img/fondos/left-image.png " class="rounded img-fluid d-block mx-auto " alt="App ">
+                    </div>
+                    <div class="col-lg-1 "></div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix ">
+                        <div class="left-heading ">
+                            <h2 class="section-title ">Objetivos</h2>
+                        </div>
+                        <div class="left-text ">
+                            <h3>Mision</h3>
+                            <p>Es una empresa dedicada a la belleza y cuidado del cabello donde lo más importante es la imagen de los clientes, resguardada por un servicio altamente calificado y en constante búsqueda de conocimiento, nuevas técnicas y tendencias.
+                                Ofrecer la mejor asesoría para enseñarles a los clientes a potenciar sus cualidades para conseguir un estilo único a través del uso de productos de marca muy reconocidas en todo el mundo para proveer un servicio de calidad
+                                y en tiempo récord.
+                            </p>
+                            <h3>Vision</h3>
+                            <p>
+                                Ser la referencia profesional sobre la belleza y sus tendencias entre las mujeres y hombres de todo el país, para lograr esto, se trabaja arduamente para crear la mejor experiencia en el salón y además brindar la mayor y mejor variedad de productos profesionales
+                                y servicios. Se incorpora constantemente las mejores prácticas de servicio y atención, nuevas tecnologías y las más recientes tendencias, para la experiencia “Nuevo Style” exceda expectativas de todos los clientes. .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <div class="hr "></div>
+                        <h3>Valores</h3>
+                        <p>En “Nuevo Style” se cree firmemente en la realización de trabajos de alta calidad, y en la consecución de resultados eficaces, compatibles con los siguientes valores.</p>
+                        <ul>
+                            <li>Honestidad: Integridad y transparencia en todas nuestras actuaciones.</li>
+                            <li>Profesionalidad: Compromiso sobre los objetivos acordados, a través de actuaciones respetuosas con las personas.</li>
+                            <li>Calidad: Presentar productos que cumplen con los parámetros establecidos y prometidos, que solo pueden ser cercanos a la perfección.</li>
+                            <li>Pasión: Disfrutar de los servicios que se entrega a los clientes, demostrar interés al 100%.</li>
+                            <li>Humildad: reconocimiento y aprendizaje de las experiencias negativas. Tolerancia y escucha activa a todos los niveles.</li>
+                            <li>Trabajo en equipo: apoyo desinteresado a los compañeros y al personal del cliente. Reconocimiento de la labor individual, como parte de un resultado común, a través del liderazgo y que la motivación.</li>
+                            <li>Superación: Establecimiento de metas por encima de los compromisos con un espíritu de excelencia y de autorrealización constante.</li>
+                            <li>Entusiasmo: disfrutar a diario del trabajo, transmitiendo ilusión y entusiasmo con cada actuación y logro conseguido.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Features Big Item End ***** -->
+    </section>
+    <hr class="separator">
+    <!--Servicios-->
+    <section id="servicios">
+        <div id="services " class="services ">
+            <div class="container ">
+                <div class="row wow fadeInUp " data-wow-delay="0.8s ">
+                    <div class="col-md-12 box-shad ">
+                        <div class="titlepage ">
+                            <h2 class="creative_text">Nuestros Servicios </h2>
+                            <p>El ritmo del dia a dia cambia, el mundo no le entrega a la sociedad una solucion a sus problemas, cada persona busca una forma de mantener su cuerpo en perfecto estado, es por ello que nosotros "Nuevo Style" estamos aqui paa
+                                atender tus necesidades, somos el numero 1 en servicio de peluquerias y contamos con profesionales bien experimentados para tratar tu cabello.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wow fadeInUp " data-wow-delay="0.8s ">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                        <div id="box_ho " class="why-box ">
+                            <i><img src="img/logo/service2.png " width="100 " alt="# " /></i>
+                            <h3>Peluqueria</h3>
+                            <p>Contamos con un servicio de peluqueria, donde tendras acceso a amplios servicios, tal como corte de cabello, corte y delineado de barba.</p>
+                        </div>
+                        <a class="read_more bg " href="#">Ver más</a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                        <div class="why-box ">
+                            <i><img src="img/iconos/clock.png " width="100 " alt="# " /></i>
+                            <h3>Reserva de hora en linea</h3>
+                            <p>Contamos con un sistema de reservas de hora donde los clientes tendran la oportunidad de realizar sus reservas sin la necesidad de ir a la peluqueria.</p>
+                        </div>
+                        <a class="read_more bg " href="#">Ver más</a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                        <div class="why-box ">
+                            <i><img src="img/logo/service1.png " width="100 " alt="# " /></i>
+                            <h3>Depilación</h3>
+                            <p>Contamos con un servicio de depilación, lo que querdará a criterio del cliente elegir las partes del cuerpo para realizar dicho servicio. </p>
+
+                        </div>
+                        <a class="read_more bg " href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <hr class="separator">
+    <!--Contact start -->
+    <!-- MAKE AN APPOINTMENT -->
+    <section id="contactos" data-stellar-background-ratio="3 ">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center box-shad section-title wow fadeInUp " data-wow-delay="0.4s ">
+                    <h2 class="creative_text">Contactanos</h2>
+                    <p>Tienes dudas y consultas, no lo piensas más, escribenos y te orientaremos.</p>
+                </div>
+            </div>
+            <div class="row ">
+
+                <div class="col-md-6 col-sm-6 wow fadeInUp " data-wow-delay="0.8s ">
+                    <img src="img/iconos/soporte.png " class="img-responsive " alt=" ">
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- CONTACT FORM HERE -->
+                    <!-- SECTION TITLE -->
+
+
+                    <div class="wow fadeInUp " data-wow-delay="0.8s ">
+                        <form id="Formulario_contacto" method="post">
+                            <div class="col-md-6 col-sm-6 ">
+                                <label for="name ">Nombre<span style="color:red;font-family: serif; ">*</span></label>
+                                <input type="text " class="form-control " id="name" name="name" placeholder="Nombre Completo " required=" ">
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 ">
+                                <label for="email ">Correo Electronico<span style="color:red;font-family: serif; ">*</span></label>
+                                <input type="email " class="form-control " id="email" name="email" placeholder="Tu correo " required=" ">
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 ">
+                                <label for="telephone ">Numero de telefono<span style="color:red;font-family: serif; ">*</span></label>
+                                <input type="number" class="form-control " id="phone" name="phone" placeholder="911111111 " maxlength="9 " minlength="9" max="999999999" in="911111111" required=" ">
+                                <label for="name ">Asunto<span style="color:red;font-family: serif; ">*</span></label>
+                                <input type="text " class="form-control " id="subject" name="subject" placeholder="Asunto " required=" ">
+                                <label for="Message ">Mensaje<span style="color:red; font-family: serif; ">*</span></label>
+                                <textarea class="form-control " rows="5 " id="message" name="message" placeholder="Mensaje" required=" "></textarea>
+                                <button id="btn1" onclick="RegistrarSoportes()" type="button" class="form-control">Enviar</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact End ***** -->
+
+    <!---------------Modal Login-------------------->
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title col-md-6" id="staticBackdropLabel">AHD - Inicio de Sesion</h5>
+                    <button type="button" class="close btn-lg btn" aria-label="Close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-11 form-signin">
+                            <form id="form-login" action="#" method="post">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img class="mb-4" src="img/logo/logo.png" alt="logo" width="150" height="75">
+                                        <h3>Iniciar Sesion</h3>
+
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <label for="floatingInput">Usuario:</label>
+                                    <input type="text" class="form-control" id="txtusu" name="txtusu" required placeholder="Ingresa su nombre de usuario">
+                                </div>
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Contraseña</label>
+                                    <input type="password" class="form-control" id="txtcon" name="txtcon" required placeholder="Ingrese su contraseña">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="reset" class="btn btn-danger">Restablecer</button>
+                                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------->
+
+    <!---------------Modal Login1-------------------->
+    <div class="modal fade" id="login1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title col-md-6" id="staticBackdropLabel1">AHD - Inicio de Sesion</h5>
+                    <button type="button" class="close btn-lg btn" aria-label="Close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-11 form-signin">
+                            <form id="form-login1" action="#" method="post">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img class="mb-4" src="img/logo/logo.png" alt="logo" width="150" height="75">
+                                        <h3>Iniciar Sesion</h3>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <label>Tipo de usuario:</label><br />
+                                        <select class="form-control" id="user_tip" name="user_tip">
+                                        <option value="2">Empresa</option>
+                                        <option value="3">Trabajador</option>
+                                        <option value="4">Recepcionista</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <label for="floatingInput">Usuario:</label>
+                                    <input type="text" class="form-control" id="txtusu1" name="txtusu" required placeholder="Ingresa su nombre de usuario">
+                                </div>
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Contraseña</label>
+                                    <input type="password" class="form-control" id="txtcon1" name="txtcon" required placeholder="Ingrese su contraseña">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="reset" class="btn btn-danger">Restablecer</button>
+                                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------->
+
+
+    <!---------------Modal Registro Usuario-------------------->
+    <div class="modal fade" id="user-signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title col-md-6" id="staticBackdropLabel2">AHD - Registro de Usuario</h5>
+                    <button type="button" class="close btn-lg btn" aria-label="Close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-lg-11 form-signin">
+                                <form id="form-register" action="Process/login.php" method="post">
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <img class="mb-4" src="img/logo/logo.png" alt="logo" width="150" height="75">
+                                            <h3>Registro de Usuario</h3>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Tipo de indentificacion:</label><br />
+                                            <select class="form-control" id="tip_id" onchange="tipo_id()">
+                                                <option value="1">Rut Chileno</option>
+                                                <option value="2">Otros</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Indentificador:</label><br />
+                                            <input class="rut form-control" type="text" name="txt_ind" id="txt_ind" placeholder="Rut: 11.111.111-1 / 11111111-1" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Nombre:</label><br />
+                                            <input class="form-control" type="text" name="nom_usu" id="nom_usu" placeholder="Ingrese su nombre" maxlength="12" />
+                                        </div>
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Apellidos:</label><br />
+                                            <input class="form-control" type="text" name="ape_usu" id="ape_usu" placeholder="Ingrese su apellido" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Nombre de Usuario:</label><br />
+                                            <input class="form-control" type="text" name="log_usu" id="log_usu" placeholder="Ingrese" />
+                                        </div>
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Contraseña:</label><br />
+                                            <input class="form-control" autocomplete="new-password" type="password" name="pas_usu" id="pas_usu" placeholder="Ingrese su Contraseña" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <label>Confirme Contraseña:</label><br />
+                                            <input class="form-control" autocomplete="new-password" type="password" name="con_pas" id="con_pas" placeholder="Confirme su contraseña" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Fecha de nacimiento</label><br />
+                                            <input class="form-control" type="date" id="eda_usu" name="eda_usu" placeholder="Ingrese su edad" />
+                                        </div>
+                                        <div class="col-md-12 col-lg-6">
+                                            <label>Sexo:</label><br />
+                                            <select class="form-control" id="sex_usu" name="id_sex">
+                                                <option value="1">Masculino</option>
+                                                <option value="2">Feminino</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <label>Telefono:</label><br />
+                                            <input class="form-control" type="tel" name="tel_usu" id="tel_usu" placeholder="Ingrese su numero de Telefono" maxlength="9" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6 ">
+                                            <label>Region:</label><br />
+                                            <select class="form-control region" name="region" id="region" required onchange="searchcomuna()">
+                                            <option value="0" disabled>Seleccione una region</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 com">
+                                            <label>Comuna:</label><br />
+                                            <select class="form-control comuna" name="comuna">
+                                            <option value="0">Seleccione una Comuna</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <label>Direccion:</label><br />
+                                            <input class="form-control" type="text" name="dir" id="dir" placeholder="Ingrese su Direccion" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <label>Correo Electronico:</label><br />
+                                            <input class="form-control" type="email" name="cor_usu" id="cor_usu" placeholder="Ingrese su Correo electronico" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 term">
+                                            <input type="checkbox" id="btn_term1" /><a target="_blank" href="terminos.html" style="color: black;">Acepto los terminos y condiciones de uso de esta herramienta para el funcionamiento de mi peluqueria</a>
+                                        </div>
+                                    </div>
+                                    <div class=" modal-footer ">
+                                        <button type="reset " class="btn btn-danger ">Restablecer</button>
+                                        <button type="submit " class="btn btn-primary ">Registro</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------->
+
+
+
+
+
+    <div class="navbar-fixed-bottom bg-success text-center ">
+        <p>Copyright <i class="fa fa-copyright " aria-hidden="true "></i> - AHD Haidresser- Nuevo Style 2021</p>
+    </div>
+
+
+
+    <!--
+    <script type="text/javascript">
+        (function(d, src, c) {
+            var t = d.scripts[d.scripts.length - 1],
+                s = d.createElement('script');
+            s.id = 'la_x2s6df8d';
+            s.async = true;
+            s.src = src;
+            s.onload = s.onreadystatechange = function() {
+                var rs = this.readyState;
+                if (rs && (rs != 'complete') && (rs != 'loaded')) {
+                    return;
+                }
+                c(this);
+            };
+            t.parentElement.insertBefore(s, t.nextSibling);
+        })(document,
+            'https://wilkenstech.ladesk.com/scripts/track.js',
+            function(e) {
+                LiveAgent.createButton('bc0zu599', e);
+            });
+    </script>-->
+
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/jquery.stellar.min.js "></script>
+    <script type="text/javascript " src="js/jquery.mask.js "></script>
+    <script type="text/javascript " src="js/jquery.sticky.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script type="text/javascript " src="js/js-snackbar.min.js "></script>
+    <script type="text/javascript " src="js/Process/main.js "></script>
+    <script type="text/javascript " src="js/Chart.js "></script>
+    <script type="text/javascript " src="js/owl.carousel.min.js "></script>
+    <script type="text/javascript " src="js/smoothscroll.js "></script>
+    <script type="text/javascript " src="js/sweetalert.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script src="js/Process/main.js "></script>
+    <script type="text/javascript " src="js/custom.js "></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/toastify-js "></script>
+</body>
+
+</html>
